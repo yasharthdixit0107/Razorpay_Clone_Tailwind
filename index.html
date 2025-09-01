@@ -8,14 +8,37 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <title>RAZORPAY WEB</title>
 
+    <style>
+        .corefeature{
+            background-size: 100% 100%;
+            padding-top: 12rem;
+           padding-bottom: 12rem;
+        }
+
+        .companiesList{
+            animation:10s infinite linear moveCompany;
+        }
+
+        @keyframes moveCompany{
+            0%{
+                top: 0;
+            }
+            100%{
+                top: -50%;
+            }
+
+        }
+    </style>
+
     <link rel="stylesheet" href="./main.css">
 </head>
 
 <!-- TAILWIND = it is a framework, by tailwind we can apply styles or media queries inside the html we dobt need to create style.css file for styling 
  we have many predefined classes here speed of our code that we write in tailwind is high in comparison to style.css-->
 
-<body class="overflow-x-hidden"> 
-   <nav class="bg-deepBlue">
+<body>
+    <div class="overflow-x-hidden relative w-full">
+         <nav class="bg-deepBlue">
     <div class="relative w-[1080px] mx-auto flex items-center justify-between">
 
 
@@ -589,7 +612,7 @@
 
   <!-- ------------feature section 2------------  -->
    <section 
-   class="bg-[url(./images/feature-section-2BG.svg)] bg-cover mt-14 bg-no-repeat overflow-x-hidden pt-[10rem] pb-[350px]">
+   class="bg-[url(./images/feature-section-2BG.svg)] bg-cover mt-14 bg-no-repeat overflow-x-hidden pt-[19rem] pb-[500px]">
     
    <div class="w-10/12 max-w-[1080px] pt-4  mx-auto relative">
         
@@ -860,12 +883,330 @@
              
          </div>
 
+         <!-- DEMO BOX -->
+
+         <div class="w-full flex flex-row items-center justify-evenly border border-slate-700 mb-24 gap-y-6 relative rounded-md p-8">
+            <p class="font-mullish text-white text-xl" > Check out the live demo to learn how RazorpayX works.
+                <span class="text-greenLight">No sign-up required</span>
+            </p>
+
+            <button
+                   class="relative bg-lightBlue flex items-center
+                   justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md
+                   font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">   
+                   Checkout the Demo
+                   <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg]
+                   flex justify-center items-center">
+                <!-- arrow -->
+                 <svg 
+                 viewbox="0 0 24 24"
+                 focusable="false"
+                 class="w-[20px] h-[20px] -skew-x-[20deg]">
+                 <path fill="CurrentColor"
+                 d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+
+                 </path>
+                
+                </svg>
+                
+            </div>                              
+            </button>
+
+
+         </div>
+
          </div>
 
 
     </div>
    </section>
 
+   <!-- new feature section -->
+    <section class="bg-white relative py-20">
+        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+            <!-- Background dotted images -->
+            <img src="./images/feature-section1-dottedrows.png" alt=""
+            class="absolute w-[233px] left-[300px] -top-[6rem] z-10">
+            <img src="./images/feature-section1-dottedrows.png" alt="" 
+            class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-[100]">
+
+            <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
+                <!-- item 1 -->
+                 <div class="relative flex items-center -z-[100]">
+                    <h2 
+                    class="text-deepBlueHead font-mullish font-extrabold text-4xl leading-[3.375rem]">New in the 
+                        <span class="text-lightBlue500">
+                            Razorpay
+                        </span><br>
+                        Product Suite
+                    </h2>
+                 </div>
+                <!--card 1 -->
+                <div
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200
+                hover:bg-[url(/images/instant-settlement-bghover.svg)]
+                bg-white"
+                >
+                    <img src="./images/razorpayXicon.svg" alt=""
+                    class="w-10 h-10">
+                    <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
+                    <p 
+                    class="font-mullish py-3 text-grayText leading-normal">
+                        Simplify your recurring, internationl and team expenses with savings on every spend. save up to 10 lac</p>
+                    <div class="flex flex-row items-center cursor-pointer group">
+                        <a href=""
+                        class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue
+                        transition-all duration-200">Know More</a>
+                        <i
+                        data-feather="chevron-right"
+                        class="w-5 h-5 text-lightBlue500
+                        group-hover:text-grayBlue transition-all duration-200"></i>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200
+                hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white"
+                >
+                    <img src="./images/razorpayXicon.svg" alt=""
+                    class="w-10 h-10">
+                    <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
+                    <p 
+                    class="font-mullish py-3 text-grayText leading-normal">
+                        Simplify your recurring, internationl and team expenses with savings on every spend. save up to 10 lac</p>
+                    <div class="flex flex-row items-center cursor-pointer group">
+                        <a href=""
+                        class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue
+                        transition-all duration-200">Know More</a>
+                        <i
+                        data-feather="chevron-right"
+                        class="w-5 h-5 text-lightBlue500
+                        group-hover:text-grayBlue transition-all duration-200"></i>
+                    </div>
+                </div>
+                <!-- card 3-->
+                <div
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200
+                hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white"
+                >
+                    <img src="./images/razorpayXicon.svg" alt=""
+                    class="w-10 h-10">
+                    <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
+                    <p 
+                    class="font-mullish py-3 text-grayText leading-normal">
+                        Simplify your recurring, internationl and team expenses with savings on every spend. save up to 10 lac</p>
+                    <div class="flex flex-row items-center cursor-pointer group">
+                        <a href=""
+                        class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue
+                        transition-all duration-200">Know More</a>
+                        <i
+                        data-feather="chevron-right"
+                        class="w-5 h-5 text-lightBlue500
+                        group-hover:text-grayBlue transition-all duration-200"></i>
+                    </div>
+                </div>
+                <!-- card 4 -->
+               <div
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200
+                hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white"
+                >
+                    <img src="./images/razorpayXicon.svg" alt=""
+                    class="w-10 h-10">
+                    <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
+                    <p 
+                    class="font-mullish py-3 text-grayText leading-normal">
+                        Simplify your recurring, internationl and team expenses with savings on every spend. save up to 10 lac</p>
+                    <div class="flex flex-row items-center cursor-pointer group">
+                        <a href=""
+                        class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue
+                        transition-all duration-200">Know More</a>
+                        <i
+                        data-feather="chevron-right"
+                        class="w-5 h-5 text-lightBlue500
+                        group-hover:text-grayBlue transition-all duration-200"></i>
+                    </div>
+                </div>
+                <!-- card 5 -->
+               <div
+                class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200
+                hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white"
+                >
+                    <img src="./images/razorpayXicon.svg" alt=""
+                    class="w-10 h-10">
+                    <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
+                    <p 
+                    class="font-mullish py-3 text-grayText leading-normal">
+                        Simplify your recurring, internationl and team expenses with savings on every spend. save up to 10 lac</p>
+                    <div class="flex flex-row items-center cursor-pointer group">
+                        <a href=""
+                        class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue
+                        transition-all duration-200">Know More</a>
+                        <i
+                        data-feather="chevron-right"
+                        class="w-5 h-5 text-lightBlue500
+                        group-hover:text-grayBlue transition-all duration-200"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </section>
+
+    <!-- core features -->
+     <section class="w-full bg-[url(/images/core-features-sectionBg.svg)] bg-no-repeat bg-cover bg-center mt-14 relative corefeature">
+        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+            <h2 class="font-mullish font-bold text-2xl text-center text-white">Features</h2>
+            <div class="w-6 h-1 bg-greenLight  mx-auto mt-4 mb-6"></div>
+            <p 
+            class="font-mullish max-w-[450px] text-white mx-auto"
+            
+            >Empower your Business with all the right tools to accept online payments and provide the best customer Experience</p>
+             
+            <!-- grid -->
+            <div class="grid grid-cols-4 gp-[2rem] mt-8">
+                <!-- card 1 -->
+                 <div>
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class=" font-mullish text-white text-lg font-bold my-4">Instant Activation </h3>
+                    <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. completely online onboarding with minimum documentation</p>
+                 </div>
+                 <!-- card 2 -->
+                   <div>
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class=" font-mullish text-white text-lg font-bold my-4">Instant Activation </h3>
+                    <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. completely online onboarding with minimum documentation</p>
+                 </div>
+                 <!-- card 3 -->
+                   <div>
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class=" font-mullish text-white text-lg font-bold my-4">Instant Activation </h3>
+                    <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. completely online onboarding with minimum documentation</p>
+                 </div>
+                 <!-- card 4 -->
+                   <div>
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class=" font-mullish text-white text-lg font-bold my-4">Instant Activation </h3>
+                    <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. completely online onboarding with minimum documentation</p>
+                 </div>
+                 <!-- card 5 -->
+                   <div>
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class=" font-mullish text-white text-lg font-bold my-4">Instant Activation </h3>
+                    <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. completely online onboarding with minimum documentation</p>
+                 </div>
+                 <!-- card 6 -->
+                   <div>
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class=" font-mullish text-white text-lg font-bold my-4">Instant Activation </h3>
+                    <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. completely online onboarding with minimum documentation</p>
+                 </div>
+                 <!-- card 7 -->
+                   <div>
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class=" font-mullish text-white text-lg font-bold my-4">Instant Activation </h3>
+                    <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. completely online onboarding with minimum documentation</p>
+                 </div>
+                 <!-- card 8 -->
+                   <div>
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class=" font-mullish text-white text-lg font-bold my-4">Instant Activation </h3>
+                    <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. completely online onboarding with minimum documentation</p>
+                 </div>
+
+
+
+
+
+
+            </div>
+        </div>
+     </section>
+
+     <!-- join razorpay section -->
+
+     <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
+        <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row">
+            <!-- left part -->
+             <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+                <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">Join the 50,00,000+ business using Razorpay</h2>
+                <div class="w-6 h-1 bg-greenLight my-4 mb-10"></div>
+                <p class="font-mullish opacity-80">we make it easier for you to focus on building great while we work on simplifying your payments. Become one of us by Joining thousands of our happy users and simplify the online payment experience for your customers</p>
+                <p class="font-mullish mt-6 opacity-80">Focus on your Business while we handle the complexities of payments for you </p>
+             </div>
+
+             <!-- RIGHT PART -->
+              <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+                <div style="background: linear-gradient(180deg,#f4f8ff,#fff0)"
+                class="absolute w-full h-[150px] top-0 z-50">
+
+                </div>
+                <img src="./images/comanies.png" alt=""
+                class="absolute h-auto object-cover companiesList">
+                <div style="background: linear-gradient(0deg,#f4f8ff,#fff0)"
+                class="absolute w-full h-[150px] bottom-0 z-50">
+              </div>
+
+        </div>
+     </section>
+
+     <!-- TESTIMONIAL SECTION -->
+      <section>
+
+        <div>
+            <img src="./images/feature-section1-dottedrows.png" alt="">
+            <h2>An Experience
+                People Love to Talk About 
+            </h2>
+            <div class="w-6 h-1 bg-greenLight mx-auto"></div>
+        </div>
+
+        <!-- Left button -->
+
+        <button>
+            <div>
+                <i>
+
+                </i>
+            </div>
+        </button>
+
+        <!-- Right button -->
+         <button>
+            <div>
+                <i>
+
+                </i>
+            </div>
+         </button>
+
+         <!-- Main content -->
+          <div>
+            <!-- left image -->
+             <img src="" alt="">
+
+             <!-- right part -->
+              <div>
+                <img src="" alt="">
+                <p></p>
+                <a href=""></a>
+                <h3></h3>
+                <p></p>
+                <img src="" alt="">
+           
+              </div>
+          </div>
+
+          <!-- 6 dot div -->
+           
+
+
+
+
+      </section>
+
+
+    </div> 
+  
   <script>
     feather.replace()
   </script>
