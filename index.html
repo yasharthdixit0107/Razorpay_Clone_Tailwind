@@ -1150,57 +1150,82 @@
      </section>
 
      <!-- TESTIMONIAL SECTION -->
-      <section>
+      <section class="relative bg-gray-50 py-20">
 
-        <div>
-            <img src="./images/feature-section1-dottedrows.png" alt="">
-            <h2>An Experience
+        <div class="w-11/12 max-w-[1300px] mx-auto relative">     <!-- absolute positioning se ek fix jagh pr image ko fix kr skta hu  -->
+            <img src="./images/feature-section1-dottedrows.png" alt="Decorative dotted pattern"
+            class="absolute w-[200px] top-[6rem] left-[2rem] z-0 opacity-60">
+            <img src="./images/feature-section1-dottedrows.png" alt="Decorative dotted pattern"
+            class="absolute w-[200px] top-[6rem] right-[2rem] z-0 opacity-60">
+            <h2 class="font-mullish font-bold text-2xl text-deepBlueHead text-center mb-4">An Experience  <br>
                 People Love to Talk About 
             </h2>
             <div class="w-6 h-1 bg-greenLight mx-auto"></div>
         </div>
 
         <!-- Left button -->
-
-        <button>
-            <div>
-                <i>
+        <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-4 top-1/2 transform -translate-y-1/2 flex justify-center items-center hover:bg-[#e8f0ff] transition-all duration-200 z-10" >
+            <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex items-center justify-center mix-blend-multiply">
+                <i
+                data-feather="chevron-left"
+                class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">
 
                 </i>
             </div>
         </button>
 
         <!-- Right button -->
-         <button>
-            <div>
-                <i>
+       
+        <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-4 top-1/2 transform -translate-y-1/2 flex justify-center items-center hover:bg-[#e8f0ff] transition-all duration-200 z-10" >
+            <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex items-center justify-center mix-blend-multiply">
+                <i
+                data-feather="chevron-right"
+                class="stroke-[5px] w-6 h-6 md:w-10 text-gray-400">
 
                 </i>
             </div>
-         </button>
+        </button>
+
 
          <!-- Main content -->
-          <div>
+          <div class="flex flex-col lg:flex-row max-w-[960px] items-center mx-auto mt-20 space-y-8 lg:space-y-0 lg:space-x-[10rem] px-4">
             <!-- left image -->
-             <img src="" alt="">
+             <img src="./images/testimonial.jpg" alt="Customer testimonial photo"
+             height="320px"
+             width="320px"
+             class="rounded-xl shadow-lg z-10">
 
              <!-- right part -->
-              <div>
-                <img src="" alt="">
-                <p></p>
-                <a href=""></a>
-                <h3></h3>
-                <p></p>
-                <img src="" alt="">
+              <div class="max-w-[400px] text-center lg:text-left">
+                <img src="./images/quotes.svg" alt="Quotation marks"
+                width="35px"
+                height="40px"
+                class="-mb-2 mx-auto lg:mx-0">
+                <p class="font-mullish text-2xl lg:text-3xl font-extralight text-gray-700 leading-relaxed mb-4">
+                    Readymade Closed Wallet Solution For Quick Refunds
+                </p>
+                <a href="#" class="text-grayText italic underline hover:text-lightBlue transition-colors duration-200">Learn More</a>
+                <h3 class="font-mullish font-extrabold text-2xl text-deepBlueHead mt-4">Lorem Ipsum</h3>
+                <p class="font-mullish font-medium text-gray-600 mb-4">CEO, XYZ Engineering Company</p>
+                <img src="./images/fake-company-logo.png" alt="Company logo" width="80px" height="40px" class="mx-auto lg:mx-0">
            
               </div>
           </div>
 
           <!-- 6 dot div -->
-           
+           <div class="flex flex-row mx-auto space-x-2 justify-center mt-12">
+            <!-- dot 1 -->
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full cursor-pointer hover:bg-lightBlue300 transition-colors duration-200"></div>
+            <div class="h-[10px] w-[10px] bg-lightBlue300 rounded-full cursor-pointer"></div>
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full cursor-pointer hover:bg-lightBlue300 transition-colors duration-200"></div>
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full cursor-pointer hover:bg-lightBlue300 transition-colors duration-200"></div>
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full cursor-pointer hover:bg-lightBlue300 transition-colors duration-200"></div>
+            <div class="h-[10px] w-[10px] bg-gray-300 rounded-full cursor-pointer hover:bg-lightBlue300 transition-colors duration-200"></div>
+            
 
+           </div>
 
-
+         
 
       </section>
 
